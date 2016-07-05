@@ -5,14 +5,14 @@ class hello{
 	var $world;
 	
 	function say(){
-		echo $hello. ' ' .$world;
+		echo $this->hello. ' ' .$this->world;
 	}
 }
 $sayhi = new hello;
 
-$sayhi->$hello = "Привет";
-$sayhi->$world = "Мир!";
+$sayhi->hello = "Привет";
+$sayhi->world = "Мир";
 
-$sayhi->say();
+echo $sayhi->say();
 
 ?>
